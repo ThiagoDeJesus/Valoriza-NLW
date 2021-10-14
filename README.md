@@ -18,6 +18,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Typescript](https://www.typescriptlang.org/)
 - [Express](https://expressjs.com/pt-br/)
 - [JSONWebToken](https://github.com/auth0/node-jsonwebtoken#readme)
+- [Docker](https://www.docker.com/)
+- [PostgresSQL](https://www.postgresql.org/)
 
 ## 💻 Projeto
 
@@ -28,7 +30,8 @@ Este projeto foi desenvolvido durante a NLW-06, que é um evento promovido gratu
 
 - Clone o repositório
 - Rode `yarn` para baixar as dependências
-- Rode `yarn typeorm migration:run` para criar as tabelas do banco de dados.
+- Rode `docker-compose up` para subir o container do banco de dados
+- Aguarde o container estar de pé e então rode  `yarn typeorm migration:run` em um novo terminal para criar as tabelas do banco de dados.
 - Rode o `yarn dev` para iniciar a aplicação.
 
 Por fim, a aplicação estará disponível em `http://localhost:3000`
